@@ -1,0 +1,13 @@
+name: macOS GUI Access
+
+on:
+  workflow_dispatch
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Debugging with tmate
+        uses: mxschmitt/action-tmate@v3.11
